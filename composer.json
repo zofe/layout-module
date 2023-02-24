@@ -1,0 +1,22 @@
+{
+    "name": "zofe/layout-module",
+    "description": "layout module for rapyd-livewire application",
+    "license": "mit",
+    "type": "rapyd-module",
+    "authors": [
+        {
+            "name": "Felice",
+            "email": "felice.ostuni@gmail.com"
+        }
+    ],
+    "require": {
+        "cviebrock/eloquent-sluggable": "^8.0|^9.0|^10.0",
+        "zofe/rapyd-livewire": "^0.8.29",
+        "zofe/rapyd-module-installer": "^0.0.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "zofe/rapyd-module-installer": true
+        }
+    }
+}
