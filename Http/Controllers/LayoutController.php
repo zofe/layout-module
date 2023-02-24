@@ -7,9 +7,9 @@ use App\Http\Controllers\Controller;
 
 class LayoutController extends Controller
 {
-    public function testAuth()
+    public function testFrontend()
     {
-        return view('layout::test-auth');
+        return view('layout::test-frontend');
     }
 
     public function testAdmin()

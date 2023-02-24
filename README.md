@@ -1,6 +1,6 @@
 # Laravel Layout Module
 
-This is an Admin Layout module for a Laravel application 8| 9| 10.
+This is an Admin Layout module for a Laravel application 8 | 9 | 10.
 The idea is to isolate assets compilation and template pages for frontend/admin in a single, generic, reusable module.
 
 the base is SBAdmin but updated to bootstrap 5.2
@@ -16,7 +16,7 @@ composer require zofe/layout-module
 # Testing routes
 
 - /layout/test-admin
-- /layout/test-auth
+- /layout/test-frontend
 
 
 

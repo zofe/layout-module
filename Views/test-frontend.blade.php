@@ -1,4 +1,4 @@
-@extends('layout::auth')
+@extends('layout::frontend')
 
 @section('main-content')
 
@@ -9,7 +9,7 @@
                     <div class="card-body p-5">
                         <div class="row">
 
-                            test auth
+                            test frontend
 
                         </div>
                     </div>
