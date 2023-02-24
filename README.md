@@ -45,14 +45,14 @@ return [
 ];
 ```
 
-but you can also use directly in your livewire views ie:
+but you can also use directly the reference in your livewire components ie:
 
 ```php
 ...
     public function render()
     {
         return view('knowledgebase::Admin.views.articles_edit')
-            ->layout('knowledgebase::admin');
+            ->layout('layout::admin');
     }
 ...
 ```
