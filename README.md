@@ -1,4 +1,4 @@
-# Laravel Layout Module (SBAdmin)
+# Laravel Layout Module
 
 This is an Admin Layout module for a Laravel application 8| 9| 10.
 The idea is to isolate assets compilation and template pages for frontend/admin in a single, generic, reusable module.
