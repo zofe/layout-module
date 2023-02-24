@@ -20,15 +20,39 @@ composer require zofe/layout-module
 
 
 
-# Compilation 
+# Compilation (for customizations)
 
-from app/Modules/Layout you can run: 
+from app/Modules/Layout you can run one of: 
 ```
 npm run dev 
+npm run prod 
 ```
 
 this will copy and replace all assets in your laravel public folder
 
 
+# Usage
+you can refer to two predefined layout in your rapyd-livewire modules config.php es:
+```
+return [
+    'layout' => 'layout::frontend',
+];
+```
+or
+```
+return [
+    'layout' => 'layout::admin',
+];
+```
 
+but you can also use directly in your livewire views ie:
 
+```php
+...
+    public function render()
+    {
+        return view('knowledgebase::Admin.views.articles_edit')
+            ->layout('knowledgebase::admin');
+    }
+...
+```
