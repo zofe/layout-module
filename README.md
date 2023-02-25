@@ -15,8 +15,8 @@ composer require zofe/layout-module
 
 # Testing routes
 
-- /layout/test-admin
-- /layout/test-frontend
+- /test-admin
+- /test-frontend
 
 
 
