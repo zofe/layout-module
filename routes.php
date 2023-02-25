@@ -4,9 +4,10 @@ use App\Modules\Layout\Http\Controllers\LayoutController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('layout/test-frontend', [LayoutController::class,'testFrontend'])
+Route::get('test-frontend', [LayoutController::class,'testFrontend'])
+    ->middleware(['web'])
     ->name('layout.test.frontend');
 
-Route::get('layout/test-admin', [LayoutController::class,'testAdmin'])
-    //->middleware('auth')
+Route::get('test-admin', [LayoutController::class,'testAdmin'])
+    ->middleware(['web'])
     ->name('layout.test.admin');
