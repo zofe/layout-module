@@ -23,6 +23,9 @@
 
                     @yield('main-content')
                     {{ $slot ??'' }}
+
+
+                    @yield('doc')
                 </div>
 
             </div>
