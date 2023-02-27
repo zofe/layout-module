@@ -15,8 +15,8 @@ composer require zofe/layout-module
 
 # Testing routes
 
-- /layout/test-admin
-- /layout/test-frontend
+- /test-admin
+- /test-frontend
 
 
 
@@ -24,6 +24,7 @@ composer require zofe/layout-module
 
 from app/Modules/Layout you can run one of: 
 ```
+npm i
 npm run dev 
 npm run prod 
 ```
