@@ -60,7 +60,7 @@
                     @yield('user_info_dropdown')
 
                 </div>
-
+                @endif
             </li>
             @endif
         </ul>
