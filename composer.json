@@ -18,5 +18,7 @@
         "allow-plugins": {
             "zofe/rapyd-module-installer": true
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
