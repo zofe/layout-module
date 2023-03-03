@@ -5,12 +5,23 @@ The idea is to isolate assets compilation and template pages for frontend/admin 
 
 the base is SBAdmin but updated to bootstrap 5.2
 
-
 # Installation & configuration
 
 ```
 composer require zofe/layout-module
+
 ```
+
+then from app/Modules/Layout must run:
+
+```
+cd app/Modules/Layout
+npm i 
+npm run dev  
+```
+
+the last command this will compile copy and replace all assets 
+in your laravel public folder
 
 
 # Testing routes
@@ -18,18 +29,6 @@ composer require zofe/layout-module
 - /test-admin
 - /test-frontend
 
-
-
-# Compilation (for customizations)
-
-from app/Modules/Layout you can run one of: 
-```
-npm i
-npm run dev 
-npm run prod 
-```
-
-this will copy and replace all assets in your laravel public folder
 
 
 # Usage
