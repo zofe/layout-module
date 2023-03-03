@@ -15,7 +15,11 @@
     @endif
 
 
-    @stack('left_sidebar')
+    @section('left_sidebar')
+        @foreach(config('rapyd-livewire.menus.admin') as $menu)
+                @include($menu)
+        @endforeach
+    @show
 
     @yield('role_menu')
 
