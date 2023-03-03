@@ -11,7 +11,11 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
 
-                @stack('left_navbar')
+                @section('left_navbar')
+                    @foreach(config('rapyd-livewire.menus.frontend') as $menu)
+                        @include($menu)
+                    @endforeach
+                @show
 
             </ul>
 
