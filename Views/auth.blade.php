@@ -37,7 +37,7 @@
         ]); ?>
 
         window._locale = '{{ app()->getLocale() }}';
-        window._translations = {!! cache('translations') !!};
+        //window._translations = {!! cache('translations') !!};
         window.livewire_app_url = '/';
     </script>
 
