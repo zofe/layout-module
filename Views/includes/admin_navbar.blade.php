@@ -36,22 +36,22 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
 
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="mr-2 d-none d-lg-inline text-gray-600 small">
-                            <div>{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</div>
-
+                            <div>{{ Auth::user()->name }}</div>
                             @if(Auth::user()->company) <div class="text-center mt-n2"><small><em>{{Auth::user()->company->business_name}}</em></small></div> @endif
                     </div>
                     <img class="img-profile rounded-circle" src="{{ asset('vendor/layout/img/user-account-icon.png') }}">
-
                 </a>
-                @if(Route::has('profile'))
+
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    @if(Route::has('profile'))
                     <a class="dropdown-item" href="{{ route('profile') }}">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                         {{ __('Profile') }}
                     </a>
+                    @endif
                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                         {{ __('Logout') }}
@@ -60,7 +60,7 @@
                     @yield('user_info_dropdown')
 
                 </div>
-                @endif
+
             </li>
             @endif
         </ul>
