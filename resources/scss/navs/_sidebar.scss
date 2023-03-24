@@ -165,11 +165,11 @@
         padding: 1rem;
         width: $sidebar-base-width;
         i {
-          font-size: 0.85rem;
+          font-size: $sidebar-link-font-size;
           margin-right: 0.25rem;
         }
         span {
-          font-size: 0.85rem;
+          font-size: $sidebar-link-font-size;
           display: inline;
         }
         // Accordion Arrow Icon

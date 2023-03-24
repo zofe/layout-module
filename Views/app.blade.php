@@ -25,6 +25,9 @@
 {{--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>--}}
 
     <link href="{{ asset('vendor/layout/styles.css') }}" rel="stylesheet">
+    @if(config('layout.custom_css'))
+        <link href="{{ config('layout.custom_css') }}" rel="stylesheet">
+    @endif
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

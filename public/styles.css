@@ -3602,6 +3602,7 @@ textarea.form-control-lg {
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-size: 1rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -3776,6 +3777,7 @@ textarea.form-control-lg {
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-size: 1rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
@@ -11566,11 +11568,11 @@ a:focus {
     width: 14rem;
   }
   .sidebar .nav-item .nav-link i {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-bs-toggle=collapse]::after {
@@ -12045,7 +12047,7 @@ table.table tr.tr-small td, table.table tr.tr-small th {
 }
 
 .sidebar {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1;
 }
 

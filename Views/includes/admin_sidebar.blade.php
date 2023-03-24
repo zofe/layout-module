@@ -1,8 +1,8 @@
 <!-- Sidebar -->
-<ul class="navbar-nav {{ config('layout.bg_sidebar') }} sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav {{app()->environment(['local', 'stage']) ? 'bg-gradient-primary-'.app()->environment() : 'bg-gradient-primary'}} bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="overflow: hidden;" href="#">
 
         @if(config('layout.logo_sidebar'))
             <img src="{{ config('layout.logo_sidebar') }}" class="img-fluid px-2" />

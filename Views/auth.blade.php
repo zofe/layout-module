@@ -26,7 +26,9 @@
 {{--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>--}}
 
     <link href="{{ asset('vendor/layout/styles.css') }}" rel="stylesheet">
-
+    @if(config('layout.custom_css'))
+        <link href="{{ config('layout.custom_css') }}" rel="stylesheet">
+    @endif
     <!-- Favicon -->
 
 {{--    @include('includes/scripts/map')--}}
@@ -45,7 +47,7 @@
     @livewireStyles
     @rapydStyles
 </head>
-<body class="{{ config('layout.bg_login') }} min-vh-100 d-flex justify-content-center align-items-center">
+<body class="bg-auth min-vh-100 d-flex justify-content-center align-items-center">
 
 <div id="app" class="container">
     @yield('main-content')
