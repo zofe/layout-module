@@ -1,11 +1,11 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary{{ app()->environment(['local', 'stage']) ? '-'.app()->environment() : '' }} sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav {{ config('layout.bg_sidebar') }} sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 
         @if(config('layout.logo_sidebar'))
-            <img src="{{ config('layout.logo_sidebar') }}" class="img-fluid px-2">
+            <img src="{{ config('layout.logo_sidebar') }}" class="img-fluid px-2" />
         @else
             {{ config('app.name') }}
         @endif

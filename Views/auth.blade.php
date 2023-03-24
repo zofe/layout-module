@@ -45,7 +45,7 @@
     @livewireStyles
     @rapydStyles
 </head>
-<body class="bg-gradient-primary min-vh-100 d-flex justify-content-center align-items-center">
+<body class="{{ config('layout.bg_login') }} min-vh-100 d-flex justify-content-center align-items-center">
 
 <div id="app" class="container">
     @yield('main-content')
