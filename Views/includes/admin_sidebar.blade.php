@@ -4,7 +4,11 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 
-        {{ config('app.name') }}
+        @if(config('layout.logo'))
+            <img src="{{ config('layout.logo') }}" class="img-fluid px-2">
+        @else
+            {{ config('app.name') }}
+        @endif
 
     </a>
 
