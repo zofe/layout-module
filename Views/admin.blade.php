@@ -21,6 +21,9 @@
                         </div>
                     </div>
 
+                    @include('layout::includes/messages')
+
+
                     @yield('main-content')
                     {{ $slot ??'' }}
 

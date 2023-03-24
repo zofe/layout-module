@@ -7,5 +7,7 @@
     "/public/vendor/layout/mix-manifest.json": "/public/vendor/layout/mix-manifest.json",
     "/public/vendor/layout/styles.css": "/public/vendor/layout/styles.css",
     "/public/vendor/layout/styles.css.map": "/public/vendor/layout/styles.css.map",
+    "/public/vendor/layout/img/en.svg": "/public/vendor/layout/img/en.svg",
+    "/public/vendor/layout/img/it.svg": "/public/vendor/layout/img/it.svg",
     "/public/vendor/layout/img/user-account-icon.png": "/public/vendor/layout/img/user-account-icon.png"
 }

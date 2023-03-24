@@ -3236,9 +3236,6 @@ downToggle.addEventListener('click', function (e) {
   toggleSidebar();
 });
 
-// const collapseElementList = document.querySelectorAll('.collapse');
-// const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl));
-
 //menu.classList.toggle('hidden-phone');
 
 /***/ }),
