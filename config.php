@@ -8,5 +8,6 @@
 |
 */
 return [
-    'logo' => null,
+    'logo_sidebar' => null,
+    'logo_login' => null,
 ];
