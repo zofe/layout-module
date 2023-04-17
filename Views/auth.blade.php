@@ -61,8 +61,8 @@
 
 @rapydScripts
 @stack('footer_scripts')
-<script src="{{ asset('vendor/rapyd-livewire/bootstrap.js') }}" defer></script>
+{{--<script src="{{ asset('vendor/rapyd-livewire/bootstrap.js') }}" defer></script>--}}
 <script src="{{ asset('vendor/rapyd-livewire/alpine.js') }}" defer></script>
-
+<script src="{{ asset('vendor/layout/layout.js') }}" defer></script>
 </body>
 </html>
