@@ -3215,7 +3215,8 @@ function hide_modals() {
   document.querySelector("div.modal-backdrop").remove();
 }
 function show_modal(modal) {
-  var instance = new bootstrap__WEBPACK_IMPORTED_MODULE_0__.Modal('#' + modal + 'Modal');
+  //const instance = new bootstrap.Modal('#'+modal+'Modal');
+  var instance = new bootstrap__WEBPACK_IMPORTED_MODULE_0__.Modal(document.getElementById(modal + 'Modal'));
   instance.show();
 }
 window.addEventListener('hide-modals', function (event) {

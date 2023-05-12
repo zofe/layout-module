@@ -12,9 +12,11 @@
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
 
-            @ifcomponent('search::search-navbar')
-                @livewire('search::search-navbar')
-            @endifcomponent
+            @if(config('search.models'))
+                @ifcomponent('search::search-navbar')
+                    @livewire('search::search-navbar')
+                @endifcomponent
+            @endif
 
             @if(config('app.locales'))
                 <li class="nav-item dropdown no-arrow">
