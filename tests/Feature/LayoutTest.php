@@ -3,13 +3,9 @@
 namespace App\Modules\Layout\tests\Feature;
 
 use App\Models\User;
-use App\Modules\Auth\Database\Seeders\DatabaseSeederTests;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use App\Modules\Auth\tests\TestCase;
+use App\Modules\Layout\tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Hash;
-use Livewire\Livewire;
 
 class LayoutTest extends TestCase
 {
@@ -32,14 +28,20 @@ class LayoutTest extends TestCase
     {
         $this->get(route('layout.test.frontend'))
             ->assertSuccessful()
-            ->assertSee('test frontend');
+            ->assertSee('test frontend')
+
+            ->assertViewIs('layout::test-frontend')
+        ;
     }
 
     public function test_can_see_admin_layout()
     {
         $this->actingAs($this->admin)->get(route('layout.test.admin'))
             ->assertSuccessful()
-            ->assertSee('test admin');
+            ->assertSee('test admin')
+
+            ->assertViewIs('layout::test-admin')
+        ;
     }
 
 //    public function test_can_see_blade_frontend_layout()
