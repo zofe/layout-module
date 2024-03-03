@@ -2,5 +2,5 @@
 
 @section('main-content')
 
-    test admin
+    test admin.
 @endsection
