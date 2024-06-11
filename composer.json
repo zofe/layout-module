@@ -13,13 +13,13 @@
         "php": "^8.2",
         "illuminate/config": "^11.0",
         "illuminate/contracts": "^11.0",
-        "zofe/rapyd": "dev-main|^0.11"
+        "zofe/rapyd-admin": "dev-main|^0.11"
     },
     "config": {
         "allow-plugins": {
             "zofe/rapyd-module-installer": true
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
