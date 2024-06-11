@@ -12,7 +12,7 @@
             <ul class="navbar-nav me-auto">
 
                 @section('left_navbar')
-                    @foreach(config('rapyd-livewire.menus.frontend') as $menu)
+                    @foreach(config('rapyd.menus.frontend') as $menu)
                         @include($menu)
                     @endforeach
                 @show

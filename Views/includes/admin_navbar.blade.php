@@ -6,7 +6,7 @@
         </button>
 
         <span class="nav-heading">
-            {{ optional(optional(auth()->user())->roles()->first())->name }} panel
+            {{ optional(optional(optional(auth()->user())->roles())->first())->name }} panel
         </span>
 
         <!-- Topbar Navbar -->

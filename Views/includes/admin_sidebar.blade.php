@@ -1,8 +1,8 @@
 <!-- Sidebar -->
-<ul class="navbar-nav {{app()->environment(['local', 'stage']) ? 'bg-gradient-primary-'.app()->environment() : 'bg-gradient-primary'}} bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav {{app()->environment([]) ? 'bg-gradient-primary-'.app()->environment() : 'bg-gradient-primary'}} bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="overflow: hidden;" href="{{ \App\Providers\RouteServiceProvider::HOME }}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="overflow: hidden;" href="/">
 
         @if(config('layout.logo_sidebar'))
             <img src="{{ config('layout.logo_sidebar') }}" class="img-fluid px-2" />
@@ -20,7 +20,7 @@
 
 
     @section('left_sidebar')
-        @foreach(config('rapyd-livewire.menus.admin') as $menu)
+        @foreach(config('rapyd.menus.admin') as $menu)
                 @include($menu)
         @endforeach
     @show

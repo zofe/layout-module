@@ -10,9 +10,10 @@
         }
     ],
     "require": {
-        "cviebrock/eloquent-sluggable": "^8.0|^9.0|^10.0",
-        "zofe/rapyd-livewire": "dev-main|^0.8",
-        "zofe/rapyd-module-installer": "^0.0|^0.1"
+        "php": "^8.2",
+        "illuminate/config": "^11.0",
+        "illuminate/contracts": "^11.0",
+        "zofe/rapyd": "dev-main|^0.11"
     },
     "config": {
         "allow-plugins": {
