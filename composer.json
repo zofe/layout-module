@@ -12,8 +12,7 @@
     "require": {
         "php": "^8.2",
         "illuminate/config": "^11.0",
-        "illuminate/contracts": "^11.0",
-        "zofe/rapyd-admin": "dev-main|^0.11"
+        "illuminate/contracts": "^11.0"
     },
     "config": {
         "allow-plugins": {
