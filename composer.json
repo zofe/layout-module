@@ -19,6 +19,13 @@
             "zofe/rapyd-module-installer": true
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\Modules\\LayoutServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
