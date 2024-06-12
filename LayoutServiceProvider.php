@@ -17,6 +17,10 @@ class LayoutServiceProvider extends ServiceProvider
         $this->commands([
             LayoutCommand::class,
         ]);
+
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/layout'),
+        ], 'laravel-assets');
     }
 
 
