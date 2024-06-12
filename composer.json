@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "App\\Modules\\Modules\\LayoutServiceProvider"
+                "App\\Modules\\Layout\\LayoutServiceProvider"
             ]
         }
     },
