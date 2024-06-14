@@ -1,18 +1,22 @@
 # Laravel Layout Module
 
-This is an Admin Layout module for a Laravel application 8 | 9 | 10.
+This is the Layout module of [Rapyd Admin](https://github.com/zofe/rapyd-admin), a Laravel application bootstrap for your projects
+
 The idea is to isolate assets compilation and template pages for frontend/admin in a single, generic, reusable module.
+the base is SBAdmin but updated to bootstrap 5.3
 
-the base is SBAdmin but updated to bootstrap 5.2
 
-# Installation & configuration
+# Installation
 
-```
-composer require zofe/layout-module
+This module is part of [Rapyd Admin](https://github.com/zofe/rapyd-admin) package
 
-```
 
-then from app/Modules/Layout must run:
+# Customizing Rapyd Admin Layout
+
+This module will be found on app/Modules/Layout.
+You can customize scss / static assets by editing the files in this folder.
+
+then from app/Modules/Layout you can build and publish assets running:
 
 ```
 cd app/Modules/Layout
@@ -30,9 +34,8 @@ in your laravel public folder
 - /test-frontend
 
 
-
 # Usage
-you can refer to two predefined layout in your rapyd-livewire modules config.php es:
+you can refer to two predefined layout in your rapyd-admin modules config.php es:
 ```
 return [
     'layout' => 'layout::frontend',
@@ -51,35 +54,8 @@ but you can also use directly the reference in your livewire components ie:
 ...
     public function render()
     {
-        return view('knowledgebase::Admin.views.articles_edit')
+        return view('knowledgebase::Admin.articles_edit')
             ->layout('layout::admin');
     }
 ...
 ```
-
-# Customizing Module
-To customize the module code, we recommend forking the original package repository on GitHub and making changes there. This way, you can maintain a separate branch for your changes, while also keeping up-to-date with the latest releases of the package.
-
-To install your forked version of the package in your Laravel application, you can reference your forked repository in the composer.json file of your Laravel application using the "vcs" package type. Here's an example of what you can add to your composer.json:
-
-```json
-
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/<your-github-username>/<package-name>"
-    }
-],
-```
-Replace `<your-github-username>` with your GitHub username and `<package-name>` with the name of your forked package repository.
-
-After adding your forked repository to composer.json, you can require your customized package in the same way you would require the original package:
-
-```php
-composer require <your-github-username>/<package-name>:dev-<your-branch-name>
-```
-Replace `<your-github-username>`, `<package-name>`, and `<your-branch-name>` with the appropriate values for your forked repository and branch.
-
-By using this approach, you can easily customize the module code while also keeping your code up-to-date with the latest releases of the package.
-
-We encourage developers to make changes that could be useful to the wider community and contribute back to the original package repository via pull requests. This can help improve the package for everyone and ensure that your changes are integrated with the latest releases of the package.

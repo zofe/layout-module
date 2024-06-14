@@ -23,6 +23,8 @@
         @foreach(config('rapyd.menus.admin') as $menu)
                 @include($menu)
         @endforeach
+
+        @includeIf('menu')
     @show
 
     @yield('role_menu')
