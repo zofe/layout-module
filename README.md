@@ -1,4 +1,4 @@
-# Laravel Layout Module
+# Rapyd Admin - Layout Module
 
 This is the Layout module of [Rapyd Admin](https://github.com/zofe/rapyd-admin), a Laravel application bootstrap for your projects
 
