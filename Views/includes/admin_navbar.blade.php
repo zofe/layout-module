@@ -40,10 +40,10 @@
 
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="mr-2 d-none d-lg-inline text-gray-600 small">
-                            <div>{{ Auth::user()->full_name }}</div>
+                            <div class="px-2">{{ Auth::user()->name }}</div>
                             @if(Auth::user()->company) <div class="text-center mt-n2"><small><em>{{Auth::user()->company->business_name}}</em></small></div> @endif
                     </div>
-                    <img class="img-profile rounded-circle" src="{{ asset('vendor/layout/img/user-account-icon.png') }}">
+                    <img class="img-profile rounded-circle" src="{{ Auth::user()->avatar ? asset("storage/users/".Auth::user()->id."/photos/avatar.jpg") : asset('vendor/layout/img/user-account-icon.png') }}">
                 </a>
 
                 <!-- Dropdown - User Information -->
