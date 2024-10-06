@@ -12,5 +12,4 @@ return [
     'custom_css'   => null,
     'logo_sidebar' => null,
     'logo_login' => null,
-
 ];
