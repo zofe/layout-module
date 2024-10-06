@@ -40,10 +40,6 @@
 
                 @else
 
-                    <li class="nav-item">
-                        <a href="{{ url('/home') }}" class="nav-link">Home</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
@@ -61,16 +57,6 @@
                             </form>
                         </div>
                     </li>
-
-
-
-
-{{--                    <x-rpd::nav-link label="DataTable" route="demo.articles" />--}}
-{{--                    <x-rpd::nav-link label="DataView" route="demo.articles.view" :params="1"/>--}}
-{{--                    <x-rpd::nav-link label="DataEdit" route="demo.articles.edit" />--}}
-
-
-
 
                 @endguest
             </ul>
