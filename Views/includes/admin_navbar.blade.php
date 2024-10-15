@@ -34,6 +34,13 @@
                 </li>
             @endif
 
+
+            @if (Route::has('admin.home') && Route::has('home'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}">Home</a>
+                </li>
+            @endif
+
             @if(Auth::user())
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">

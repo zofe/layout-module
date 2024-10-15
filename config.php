@@ -9,7 +9,7 @@
 */
 
 return [
-    'menu_frontend' => 'menu',
+    'menu_frontend' => 'frontend_menu',
 
     'custom_css'   => null,
     'logo_sidebar' => null,

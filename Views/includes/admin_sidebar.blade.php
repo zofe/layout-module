@@ -1,8 +1,13 @@
 <!-- Sidebar -->
 <ul class="navbar-nav {{app()->environment([]) ? 'bg-gradient-primary-'.app()->environment() : 'bg-gradient-primary'}} bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
 
-    <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="overflow: hidden;" href="/">
+
+    @php
+        $homeRoute = (Route::has('admin.home') && Route::has('home')) ? route('admin.home') : route('home');
+    @endphp
+
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="overflow: hidden;" href="{{ $homeRoute }}">
+
 
         @if(config('layout.logo_sidebar'))
             <img src="{{ config('layout.logo_sidebar') }}" class="img-fluid px-2" />

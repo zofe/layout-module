@@ -15,11 +15,11 @@
                 <div class="container">
 
 
-                    <div class="navbar-nav">
-                        <div class="nav-item navbar-search-wrapper pt-3">
-                            <x-rpd::breadcrumbs class="breadcrumb-item small" active="active" />
-                        </div>
-                    </div>
+{{--                    <div class="navbar-nav">--}}
+{{--                        <div class="nav-item navbar-search-wrapper pt-3">--}}
+{{--                            <x-rpd::breadcrumbs class="breadcrumb-item small" active="active" />--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     @yield('main-content')
                     {{ $slot ??'' }}
