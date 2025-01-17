@@ -26,8 +26,9 @@
     @endif
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    @rapydStyles
     @stack('head_scripts')
+
 </head>
 <body>
 <div id="app">
@@ -39,7 +40,7 @@
     @show
 </div>
 
-{{--@rapydScripts--}}
+@rapydScripts
 @stack('footer_scripts')
 <script src="{{ asset('vendor/layout/layout.js') }}" defer></script>
 </body>
