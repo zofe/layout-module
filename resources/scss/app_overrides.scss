@@ -15,10 +15,23 @@
     color: #fff;
 }
 
-.bg-gradient-primary {
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
-    background-size: cover;
-}
+//.bg-gradient-primary {
+//    background-image: linear-gradient(
+//            180deg,
+//            #EB4432 10%,
+//            #df2e29 100%
+//    );
+//    background-size: cover;
+//}
+
+//.bg-gradient-primary {
+//    background-image: linear-gradient(
+//            180deg,
+//            #EB4432 10%,
+//            #df2e29 100%
+//    );
+//    background-size: cover;
+//}
 
 .bg-gradient-primary-dev {
     //background-color: #67c23a;
@@ -216,6 +229,12 @@ table.table tr.tr-small {
 .sidebar {
     font-size: 0.90rem;
     line-height: 1;
+    border-right: 1px solid var(--bs-border-color);
+
+    /////////////
+    background-color: white;
+    /////////////
+
 }
 .sidebar-dark .nav-item .nav-link, .sidebar .nav-item .nav-link {
     padding-top: 0.5rem;
@@ -265,7 +284,7 @@ table tr.hr:not(:last-child)>td {
 }
 .btn-xsm {
     padding: .15rem .25rem;
-    font-size: .875rem;
+    font-size: .775rem;
     line-height: 1.2;
     border-radius: .2rem;
 }
@@ -371,8 +390,39 @@ table.cart tr.noborder td, table.order tr.noborder td {
     padding: 0.3rem 0.3rem;
 
     list-style: none;
-    background-color: #eaecf4;
-    border-radius: 0.35rem;
+
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
 }
 
 
+
+ul.pagination {
+    margin-bottom: 0;
+}
+
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+.shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.border-bottom-except-last > *:not(:last-child) {
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.ts-control {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .25rem .5rem !important;
+}
+
+.ts-wrapper {
+    min-height: calc(1em + .75rem + var(--bs-border-width)* 2) !important;
+}

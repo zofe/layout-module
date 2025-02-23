@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<ul class="navbar-nav {{app()->environment([]) ? 'bg-gradient-primary-'.app()->environment() : 'bg-gradient-primary'}} bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-sidebar sidebar accordion" id="accordionSidebar">
 
 
     @php

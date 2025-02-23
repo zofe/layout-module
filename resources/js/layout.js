@@ -2,6 +2,7 @@
 
 import * as bootstrap from 'bootstrap';
 import modbox from 'bootstrap-modbox/dist/bootstrap-modbox.esm';
+import 'livewire-sortable';
 
 try {
     window.bootstrap = bootstrap;
@@ -42,14 +43,19 @@ function toggleSidebar() {
     document.querySelector("body").classList.toggle("sidebar-toggled");
     document.querySelector(".sidebar").classList.toggle("toggled");
 }
-topToggle.addEventListener('click',(e)=>{
-    e.preventDefault();
-    toggleSidebar();
-});
-downToggle.addEventListener('click',(e)=>{
-    e.preventDefault();
-    toggleSidebar();
-});
 
+if(topToggle) {
+    topToggle.addEventListener('click',(e)=>{
+        e.preventDefault();
+        toggleSidebar();
+    });
+}
+
+if(downToggle) {
+    downToggle.addEventListener('click',(e)=>{
+        e.preventDefault();
+        toggleSidebar();
+    });
+}
 
 //menu.classList.toggle('hidden-phone');

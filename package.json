@@ -16,6 +16,7 @@
     "devDependencies": {
         "cross-env": "^7.0.3",
         "laravel-mix": "^6.0.6",
+        "livewire-sortable": "^1.0.0",
         "resolve-url-loader": "^5.0.0",
         "sass-loader": "12.1.0"
     },

@@ -4,7 +4,7 @@
     <div id="wrapper">
 
         <!-- Content Wrapper -->
-        <div id="content-wrapper" class="min-vh-100">
+        <div id="content-wrapper" class="min-vh-100 bg-white">
 
 
             <!-- Main Content -->

@@ -16,8 +16,8 @@
 
                 <div class="container-fluid">
                     <div class="navbar-nav">
-                        <div class="nav-item navbar-search-wrapper pt-3">
-                            <x-rpd::breadcrumbs class="breadcrumb-item small" active="active" />
+                        <div class="nav-item navbar-search-wrapper pt-1">
+                            <x-rpd::breadcrumbs class="breadcrumb-item" active="active" />
                         </div>
                     </div>
 

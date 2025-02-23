@@ -5,3 +5,9 @@
 @import "utilities/border.scss";
 @import "utilities/progress.scss";
 @import "utilities/rotate.scss";
+
+.flex-center-end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
