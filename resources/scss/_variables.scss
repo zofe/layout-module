@@ -72,6 +72,8 @@ $topbar-base-height: 4.375rem !default;
 $sidebar-base-width: 14rem !default;
 // Change below variable to change the width of the sidenav when collapsed
 $sidebar-collapsed-width: 6.5rem !default;
+$sidebar-bg: white;
+$nabvar-bg: white;
 
 // Card
 $card-cap-bg: $gray-100 !default;
@@ -103,6 +105,9 @@ $menu-active-section-bg: #eceded;
 $nav-link-font-size: .9rem;
 $sidebar-link-font-size: .9rem;
 
+$navbar-front-bg: white;
+$navbar-admin-bg: white;
+
 $table-cell-padding-y:        .3rem !default;
 $table-cell-padding-x:        .3rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
@@ -124,6 +129,8 @@ $form-control-border-radius: .2rem !default;
 
 $card-spacer-y: .75rem !default;
 $card-spacer-x: .75rem !default;
+
+
 
 @import "bootstrap/scss/variables.scss";
 

@@ -1,6 +1,6 @@
-// 
+//
 // Topnav
-// 
+//
 
 .sb-topnav {
     padding-left: 0;
@@ -13,6 +13,13 @@
         padding-right: $navbar-padding-x;
         margin: 0;
     }
+
+    &.navbar-front {
+        #sidebarToggle {
+            color: $topnav-front-toggler-color;
+        }
+    }
+
 
     &.navbar-dark {
         #sidebarToggle {

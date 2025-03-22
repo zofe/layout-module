@@ -47,7 +47,7 @@
     @livewireStyles
     @rapydStyles
 </head>
-<body class="bg-auth min-vh-100 d-flex justify-content-center align-items-center bg-white">
+<body class="bg-auth min-vh-100 d-flex justify-content-center align-items-center">
 
 <div id="app" class="container">
     @yield('main-content')

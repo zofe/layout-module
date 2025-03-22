@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white static-top mb-4 topbar">
+<nav class="navbar navbar-expand-md navbar-front static-top mb-4 topbar">
+
     <div class="container">
 
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -8,7 +9,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse bg-white px-2" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse px-2" id="navbarSupportedContent">
+
+
+
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
 
@@ -48,7 +52,7 @@
                         </li>
                     @endif
 
-
+                    @include('layout::includes.theme-switcher')
 
                     @include('layout::includes.user_info_dropdown')
 

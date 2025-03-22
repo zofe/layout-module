@@ -2,6 +2,9 @@
 .sidebar {
   width: $sidebar-collapsed-width;
   min-height: 100vh;
+  border-right: 1px solid var(--bs-border-color);
+  background-color: $sidebar-bg;
+
   .nav-item {
     position: relative;
     &:last-child {
@@ -281,7 +284,7 @@
   }
   .nav-item {
     .nav-link {
-      color: $gray-600;
+      color: $gray-700;
       i {
         color: $gray-400;
       }

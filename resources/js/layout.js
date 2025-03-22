@@ -2,6 +2,8 @@
 
 import * as bootstrap from 'bootstrap';
 import modbox from 'bootstrap-modbox/dist/bootstrap-modbox.esm';
+import {ThemeSwitcher} from './theme-switcher';
+
 import 'livewire-sortable';
 
 try {
@@ -57,5 +59,7 @@ if(downToggle) {
         toggleSidebar();
     });
 }
+
+ThemeSwitcher.init();
 
 //menu.classList.toggle('hidden-phone');

@@ -1,3 +1,15 @@
+:root {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+    /* altre variabili che usi per il tema chiaro */
+}
+
+/* Tema Dark */
+body.theme-dark {
+    --bs-body-bg: #121212;
+    --bs-body-color: #ffffff;
+}
+
 .navbar {
     padding: 0.5rem 1rem;
 }
@@ -5,6 +17,16 @@
 .nav-heading {
     text-transform: uppercase;
     font-weight: 800;
+}
+
+
+.navbar-front {
+    background-color: $navbar-front-bg;
+    border-bottom: 1px solid $border-color;
+}
+.navbar-admin {
+    background-color: $navbar-admin-bg;
+    border-bottom: 1px solid $border-color;
 }
 
 .btn-primary {
@@ -74,6 +96,12 @@
 @media only screen and (min-width: 768px)  {
     .border-left-ccc {
         border-left: 1px solid #ccc;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hide-border-below-lg {
+        border: 0 !important;
     }
 }
 

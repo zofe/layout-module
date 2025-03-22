@@ -1,6 +1,6 @@
-// 
+//
 // Navigation
-// 
+//
 
 // Z index variables
 $zindex-content: 1037 !default;
@@ -29,4 +29,5 @@ $sidenav-light-footer-bg: $gray-200;
 
 // Color variables for the topnav
 $topnav-dark-toggler-color: fade-out($white, 0.5);
+$topnav-front-toggler-color: $gray-900;
 $topnav-light-toggler-color: $gray-900;
