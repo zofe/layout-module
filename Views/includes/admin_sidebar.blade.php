@@ -1,4 +1,7 @@
-<!-- Sidebar -->
+{{--<!-- Sidebar -->--}}
+{{--<button class="btn btn-primary d-block d-sm-none" id="sidebarToggle">--}}
+{{--    <i class="fas fa-bars"></i>--}}
+{{--</button>--}}
 <ul class="navbar-nav bg-sidebar sidebar accordion" id="accordionSidebar">
 
 

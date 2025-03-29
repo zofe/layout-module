@@ -40,3 +40,18 @@
     }
   }
 }
+
+.navbar-front .navbar-brand {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+}
+
+.navbar-front a.navbar-brand {
+    color: $link-color;
+}

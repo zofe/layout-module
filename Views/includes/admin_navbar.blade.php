@@ -1,4 +1,4 @@
-<nav class="navbar navbar-admin navbar-expand-md topbar mb-2 static-top shadow">
+<nav class="navbar navbar-admin navbar-expand-sm topbar mb-2 static-top shadow">
     <div class="container-fluid">
 
 {{--        <span class="nav-brand">--}}

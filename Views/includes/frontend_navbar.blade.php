@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-front static-top mb-4 topbar">
+<nav class="navbar navbar-expand-sm navbar-front static-top mb-4 topbar">
 
     <div class="container">
 

@@ -13,6 +13,9 @@ body.theme-dark {
 .navbar {
     padding: 0.5rem 1rem;
 }
+.navbar-collapse {
+    z-index: 1050;
+}
 
 .nav-heading {
     text-transform: uppercase;
