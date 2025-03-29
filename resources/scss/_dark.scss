@@ -116,6 +116,22 @@
     border-color: var(--input-border);
 }
 
+.dark .ql-snow .ql-stroke {
+    stroke: var(--input-color);
+}
+.dark .ql-snow .ql-picker-label {
+    color: var(--input-color);
+}
+.dark .ql-snow .ql-fill {
+    fill: var(--input-color);
+}
+.dark .ql-toolbar.ql-snow {
+    border-color: var(--input-border) !important;
+}
+.dark .ql-container.ql-snow {
+    border-color: var(--input-border) !important;
+}
+
 /* Navbar */
 .dark .topbar {
     background-color: #242c3a;
