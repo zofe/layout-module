@@ -164,3 +164,25 @@
     background-color: $body-bg;
     border-radius: .35rem;
 }
+
+
+.navbar .ts-wrapper:not(.form-control,.form-select).single .ts-control {
+    background-image: none;
+}
+.navbar .ts-control .ts-dropdown {
+    background: transparent;
+    border: none;
+}
+.navbar .ts-control::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    font-weight: 900;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
