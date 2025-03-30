@@ -25,6 +25,10 @@
     --input-color: #f8f9fa;
     --input-border: #4a5568;
 
+    /* Modals */
+    --modal-bg: #242c3a;
+    --modal-color: #f8f9fa;
+
     /* Border color */
     --bs-border-color: #4a5568;
 
@@ -101,6 +105,15 @@
 .dark .table-bordered td,
 .dark .table-bordered th {
     border-color: var(--table-border);
+}
+
+/* Modals */
+.dark .modal-content {
+    background-color: var(--modal-bg);
+    color: var(--modal-color);
+}
+.dark .btn-close {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 2l12 12M14 2L2 14' stroke='%23f8f9fa' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 /* Forms */
